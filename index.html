@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1 id="title">Title</h1>
-    <p id="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe
-      ducimus, obcaecati vero optio pariatur sunt quia ipsa! A accusamus
-      deleniti maiores quibusdam deserunt dolorum ipsum nesciunt in neque
-      sapiente.
-    </p>
-    <form action="" id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" name="" id="name" placeholder="Name"> <br>
-         <label for="email" id="email-label">Email:</label>
-        <input type="email" name="" id="email" placeholder="Enter Email">
-        <label for="number" id="number-label">Number:</label>
-        <input type="number" name="" id="number" min="1" max="10" placeholder="Enter Number">
-        
-        <select name="" id="dropdown">
-            <option disabled selected>Select Current Role</option>
-            <option value="student">Student</option>
-            <option value="employee">Employee</option>
-            <option value="none">Prefer not to say</option>
-        </select>
-        <br>
-        <input type="radio" name="radio" id="definitely" value="Definitely">
-        <label for="definitely">Definitely</label>
-        <input type="radio" name="radio" id="maybe" value="Maybe">
-        <label for="maybe">Maybe</label>
-        <input type="radio" name="radio" id="notsure" value="Not sure">
-        <label for="notsure">Not Sure</label>
 
-         <input type="checkbox" name="" id="frontend">
-         <label for="frontend">Front-end Projects</label>
-         <input type="checkbox" name="" id="backend">
-         <label for="backend">Front-end Backend</label>
-         <input type="checkbox" name="" id="data">
-         <label for="data">Data Visualization</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-         <input type="checkbox" name="" id="Data">
-         <label for="Data">Data Visualization</label>
-         <input type="checkbox" name="" id="opensource">
-         <label for="opensource">Open Source Community</label>
-         <input type="checkbox" name="" id="gitter">
-         <label for="gitter">Gitter Help Rooms</label>
+<body>
+  <h1 id="title">Title</h1>
+  <p id="description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est saepe
+    ducimus, obcaecati vero optio pariatur sunt quia ipsa! A accusamus
+    deleniti maiores quibusdam deserunt dolorum ipsum nesciunt in neque
+    sapiente.
+  </p>
+  <form action="" id="survey-form">
+    <label for="name" id="name-label">Name</label>
+    <input type="text" name="name" id="name" required placeholder="Name" />
+    <br />
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" name="email" id="email" required placeholder="Enter Email" />
+    <label for="number" id="number-label">Number:</label>
+    <input type="number" name="age" id="number" min="1" max="10" placeholder="Enter Number" />
 
-    </form>
-  </body>
+    <select name="" id="dropdown">
+      <option disabled selected>Select Current Role</option>
+      <option value="student">Student</option>
+      <option value="employee">Employee</option>
+      <option value="none">Prefer not to say</option>
+    </select>
+    <br />
+    <input type="radio" name="radio" id="definitely" value="Definitely" />
+    <label for="definitely">Definitely</label>
+    <input type="radio" name="radio" id="maybe" value="Maybe" />
+    <label for="maybe">Maybe</label>
+    <input type="radio" name="radio" id="notsure" value="Not sure" />
+    <label for="notsure">Not Sure</label>
+
+    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end
+      Projects</label>
+    <label>
+      <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end Projects</label>
+    <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data
+      Visualization</label>
+    <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label>
+    <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Open Source
+      Community</label>
+    <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help
+      rooms</label>
+    <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label>
+    <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City Meetups</label>
+    <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label>
+    <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label>
+    <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional
+      Courses</label>
+
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
 </html>
